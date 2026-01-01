@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardik Shah for ITE International Vice President</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23006792'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='45' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3EHS%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --blue-primary: #006792;
+            --blue-light: #4a9fbd;
+            --blue-dark: #004b6b;
+            --accent: #00a8cc;
+            --gray-dark: #63666a;
+            --gray-light: #f5f5f5;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            background: var(--white);
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-primary) 50%, var(--blue-light) 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.08) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1100px;
+            margin: auto;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-image-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(255,255,255,0.3);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255,255,255,0.1);
+            background: var(--white);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 15px rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-top: 25px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .candidate-title {
+            font-size: 1.7rem;
+            margin: 20px auto;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 18px 40px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 50px;
+            display: inline-block;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            margin: 8px 0;
+            opacity: 0.95;
+        }
+
+        .hashtag {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-top: 30px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.15));
+            padding: 15px 40px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 2px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+            50% { box-shadow: 0 8px 35px rgba(255,255,255,0.3); }
+        }
+
+        /* STATS SECTION */
+        .stats-section {
+            background: linear-gradient(to bottom, var(--white), var(--gray-light));
+            padding: 70px 20px;
+            position: relative;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 40px 25px;
+            background: linear-gradient(135deg, var(--blue-primary), var(--blue-light));
+            color: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(0, 103, 146, 0.25);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-box::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+
+        .stat-box:hover::before {
+            opacity: 1;
+            transform: translate(25%, 25%);
+        }
+
+        .stat-box:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 45px rgba(0, 103, 146, 0.35);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .stat-label {
+            font-size: 1.05rem;
+            opacity: 0.95;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-bottom: 3px solid var(--blue-primary);
+            z-index: 200;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+        }
+
+        nav ul {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 18px 28px;
+            color: var(--blue-primary);
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: var(--blue-primary);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::before {
+            width: 80%;
+        }
+
+        nav a:hover {
+            background: var(--gray-light);
+            color: var(--blue-dark);
+        }
+
+        /* SECTION LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section h2 {
+            font-size: 2.8rem;
+            color: var(--blue-primary);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 5px solid var(--blue-primary);
+            text-align: center;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
+
+        .section h2::after {
+            display: none;
+        }
+
+        .vision-card, .info-card {
+            background: var(--white);
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 16px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 8px 30px rgba(0, 103, 146, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-card::before, .info-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0,103,146,0.05), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .vision-card:hover::before, .info-card:hover::before {
+            left: 100%;
+        }
+
+        .vision-card:hover, .info-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0, 103, 146, 0.15);
+            border-color: var(--blue-light);
+        }
+
+        .vision-card h3, .info-card h3 {
+            color: var(--blue-primary);
+            margin-top: 30px;
+            margin-bottom: 18px;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .vision-card p, .info-card p {
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 25px;
+            line-height: 2;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        ul li::marker {
+            color: var(--blue-primary);
+            font-weight: bold;
+        }
+
+        /* QUOTE */
+        .quote-box {
+            background: linear-gradient(135deg, var(--gray-light), #e8f4f8);
+            padding: 30px 35px;
+            border-left: 8px solid var(--blue-primary);
+            margin: 35px 0;
+            font-style: italic;
+            border-radius: 8px 16px 16px 8px;
+            color: var(--blue-dark);
+            font-size: 1.15rem;
+            box-shadow: 0 6px 20px rgba(0,103,146,0.1);
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: """;
+            font-size: 5rem;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            color: var(--blue-light);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue-primary), var(--blue-light));
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 60%);
+        }
+
+        .contact h2 {
+            color: var(--white);
+            border-bottom: none;
+            padding-bottom: 0;
+            position: relative;
+        }
+
+        .contact h2::after {
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .contact-item {
+            padding: 35px 25px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 16px;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-8px) scale(1.03);
+            border-color: rgba(255,255,255,0.4);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.9;
+        }
+
+        .contact-item i {
+            font-size: 3rem;
+            margin-bottom: 18px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover i {
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .contact-item h3 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .contact-item p {
+            word-break: break-word;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            padding: 30px;
+            background: var(--white);
+            text-align: center;
+            color: var(--blue-primary);
+            border-top: 4px solid var(--blue-primary);
+        }
+
+        .footer-hashtag {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--blue-primary);
+            margin-bottom: 12px;
+        }
+
+        /* PHOTO GALLERY */
+        .gallery-section {
+            background: linear-gradient(to bottom, var(--gray-light), var(--white));
+            padding: 70px 20px;
+        }
+
+        .gallery-container {
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-image-wrapper {
+            position: relative;
+        }
+
+        .gallery-slide {
+            display: none;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .gallery-slide.active {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+            object-fit: contain;
+            display: block;
+            background: #000;
+        }
+
+        .gallery-caption {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+            color: var(--white);
+            padding: 35px;
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        .gallery-controls {
+            padding: 15px 25px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .gallery-arrow {
+            background: var(--blue-primary);
+            color: var(--white);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,103,146,0.3);
+        }
+
+        .gallery-arrow:hover {
+            background: var(--blue-dark);
+            transform: scale(1.15);
+            box-shadow: 0 6px 20px rgba(0,103,146,0.4);
+        }
+
+        /* Side Navigation Arrows */
+        .gallery-nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 103, 146, 0.8);
+            color: var(--white);
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .gallery-nav-arrow:hover {
+            background: rgba(0, 103, 146, 1);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+        }
+
+        .gallery-nav-arrow.prev {
+            left: 20px;
+        }
+
+        .gallery-nav-arrow.next {
+            right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-nav-arrow {
+                width: 45px;
+                height: 45px;
+                font-size: 1.5rem;
+            }
+            
+            .gallery-nav-arrow.prev {
+                left: 10px;
+            }
+            
+            .gallery-nav-arrow.next {
+                right: 10px;
+            }
+        }
+
+        .gallery-dots {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .dot {
+            height: 13px;
+            width: 13px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .dot.active {
+            background-color: var(--blue-primary);
+            transform: scale(1.4);
+            box-shadow: 0 2px 8px rgba(0,103,146,0.4);
+        }
+
+        .dot:hover {
+            background-color: var(--blue-light);
+            transform: scale(1.2);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero { padding: 100px 20px 60px; }
+            .hero h1 { font-size: 2.5rem; }
+            .subtitle { font-size: 1.2rem; }
+            .candidate-title { font-size: 1.3rem; padding: 15px 30px; letter-spacing: 2px; }
+            .hashtag { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr; gap: 20px; }
+            .stat-number { font-size: 3rem; }
+            .section h2 { font-size: 2.2rem; }
+            .gallery-image { height: auto; max-height: 400px}
+            .gallery-caption { font-size: 1rem; padding: 25px; }
+            nav a { padding: 15px 20px; font-size: 0.95rem; }
+        }
+        /* Contact Buttons */
+.buttons-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contact-button {
+    background: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-button svg {
+    width: 50px;
+    height: 50px;
+}
+
+.email-icon {
+    stroke: #333;
+    stroke-width: 2;
+    fill: none;
+}
+
+.linkedin-icon {
+    fill: #0077B5;
+}
+
+.facebook-icon {
+    fill: #1877F2;
+}
+
+.phone-icon {
+    stroke: #10B981;
+    stroke-width: 2;
+    fill: none;
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#why">My Why</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <img src="https://i.ibb.co/XkLK0jtj/IMG-0322.jpg" alt="Hardik Shah" class="hero-image" />
+            </div>
+            <h1>HARDIK SHAH</h1>
+            <div class="candidate-title">Candidate for ITE International Vice President</div>
+            <p class="subtitle">PE, PTOE, ITE Fellow</p>
+            <p class="subtitle">National Practice Director & Traffic Group Leader</p>
+            <p class="subtitle">American Structurepoint • Indianapolis, IN</p>
+            <div class="hashtag">#HARDIK4ITE</div>
+        </div>
+    </header>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">18K+</span>
+                <span class="stat-label">Global Members</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Years Dedicated to ITE</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Committed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- VISION SECTION -->
+        <section id="vision" class="section">
+            <h2>My Vision for ITE</h2>
+            <div class="vision-card">
+                <h3>Strengthening Member Engagement & Investment</h3>
+                <p>ITE has done an excellent job making the organization relevant to its members. However, as we look forward to the next two decades and beyond, we need to make sure we adapt to the change in technology, as well as the direction that our industry is headed. With the increased competition with other reputable professional organizations, we need to be strategic in strengthening member engagement and demonstrating return on their investment from ITE, which will increase membership retention.</p>
+                <p>ITE will remain strong as we grow the volunteer talent pool and make them feel invested in giving their time to the Institute, and by virtue to our profession.</p>
+                
+                <h3>Innovating for a Safer, Technology-Driven Future</h3>
+                <p>This includes adapting to technological changes (AI, CAV, Big Data, Video-Analytics) which impact our workflows, workforce, and how we design safer infrastructure solutions for our communities. My goal is to ensure ITE adapts to the demands that will shape the future of our profession.</p>
+                <p>One major area of opportunity is partnering with vendors offering near-miss analytics (video/radar technology) and creating an on-demand SaaS platform for members—similar to OTISS.</p>
+
+                <h3>Global Membership Outreach, Collaboration & Engagement</h3>
+                <ul>
+                    <li>Bilateral MOUs with engineering societies globally</li>
+                    <li>Formation of additional Student Chapters</li>
+                    <li>Increasing outreach for Public Agency Membership</li>
+                    <li>Considering Corporate Membership structures</li>
+                    <li>Collaborating with professional organizations for joint meetings</li>
+                </ul>
+
+                <h3>Fostering Diversity in Workforce Development</h3>
+                <p>I believe elevating diversity in our workforce helps recruit and retain talent—critical to the transportation industry's success. ITE can play a vital role by offering workshops at District, Section, and Chapter levels that welcome talent from diverse backgrounds and communities.</p>
+                
+                <div class="quote-box">ITE has been and will always be the professional organization of my choice, and I hope many of the current and future members of ITE feel the same way.</div>
+            </div>
+        </section>
+
+        <!-- MY WHY SECTION -->
+        <section id="why" class="section">
+            <h2>My Why</h2>
+            <div class="info-card">
+                <h3>A Commitment to Service & Leadership</h3>
+                <p>Serving as ITE International President would be the honor of my life. My leadership roles over the past two decades—both professionally and in volunteer service—have allowed me to grow and understand my strengths, improving me as a leader and individual.</p>
+                <p>ITE has shaped my career, opened doors, and allowed me to build lifelong friendships. I view ITE as a platform to create opportunities for others and to positively impact communities through smarter, safer transportation solutions.</p>
+                <p>With strong support from my family, employer, and colleagues, I am ready to dedicate myself to serving ITE's 18,000+ global members.</p>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP SECTION -->
+        <section id="leadership" class="section">
+            <h2>ITE Leadership Journey</h2>
+            <div class="info-card">
+                <h3>Two Decades of Dedicated Service (2004–Present)</h3>
+                <ul>
+                    <li>ITE Purdue University Student Chapter – Social Committee Chair</li>
+                    <li>ITE Indiana Section Board – Director (2009)</li>
+                    <li>ITE Indiana Section Board – Secretary (2010)</li>
+                    <li>ITE Indiana Section Board – Treasurer (2011)</li>
+                    <li>ITE Indiana Section Board – Vice President (2012)</li>
+                    <li>ITE Indiana Section Board – President (2013)</li>
+                    <li>ITE Indiana Section Board – Past President (2014)</li>
+                    <li>ITE International Board of Direction – Great Lakes District Director (2015–2017)</li>
+                    <li>ITE Great Lakes District Executive Board – District President</li>
+                    <li>ITE Consultants Council Vice Chair (2018–Present)</li>
+                    <li>Extensive Involvement in ITE Committees, Task Forces, Judging Panels, and LeadershipITE Mentoring</li>
+                    <li>Invited Representative for ASCE/ITE Legislative Fly-In at Capitol Hill</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <div class="info-card">
+                <h3>American Structurepoint, Inc. (2005–Present)</h3>
+                <ul>
+                    <li>National Practice Director & Traffic Group Leader</li>
+                    <li>Managing a $6M+ Annual Business Unit with $8M+ in Yearly Sales</li>
+                    <li>Responsible for Career Development of Traffic & Safety Professionals</li>
+                    <li>Lead on Major Transportation Projects from $5M to $3B in Construction</li>
+                </ul>
+
+                <h3>Education</h3>
+                <ul>
+                    <li>M.S., Civil Engineering (Transportation & Materials), Purdue University</li>
+                    <li>B.S., Civil Engineering, Nirma University, India</li>
+                </ul>
+
+                <h3>Licenses & Certifications</h3>
+                <ul>
+                    <li>Professional Engineer (IN, OH, MI, GA, KY, VA, TX)</li>
+                    <li>PTOE – Professional Traffic Operations Engineer</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HONORS SECTION -->
+        <section id="honors" class="section">
+            <h2>Honors & Recognitions</h2>
+            <div class="info-card">
+                <h3>Leadership & Professional Achievement</h3>
+                <ul>
+                    <li>Next Level Leader – American Structurepoint Leadership Academy (2024–2025)</li>
+                    <li>Invited Delegate to ASCE Legislative Fly-ins (2015 & 2024)</li>
+                    <li>2022 ITE Great Lakes District Transportation Professional of the Year</li>
+                    <li>2021 ITE Indiana Section Transportation Professional of the Year</li>
+                    <li>2019 ENR Midwest Top 20 Under 40</li>
+                    <li>Graduate of Lasting Leadership Program (2020)</li>
+                    <li>Graduate of ACEC Indiana Engineering Leadership (2018–2019)</li>
+                    <li>ITE Consultant Council YP Scholarship Award (2010)</li>
+                    <li>Invited Delegate – US-India Transportation Systems Delegation (2009)</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 style="color: var(--blue-primary); text-align: center; margin-bottom: 45px; font-size: 2.8rem; font-weight: 900;">Photo Gallery</h2>
+            <div class="gallery-container">
+                
+                <!-- Side Navigation Arrows -->
+                <button class="gallery-nav-arrow prev" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                <button class="gallery-nav-arrow next" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                
+                <div class="gallery-slide active">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/B2wNGTVX/IMG-0001.jpg" alt="Hardik Shah - Gallery Photo 1" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/60ZBQRpV/IMG-0002.jpg" alt="Hardik Shah - Gallery Photo 2" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/FbMgJhxk/IMG-0003.jpg" alt="Hardik Shah - Gallery Photo 3" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/PzwWh6MV/IMG-0004.jpg" alt="Hardik Shah - Gallery Photo 4" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/yBFVrjZh/IMG-1236.jpg" alt="Hardik Shah - Gallery Photo 5" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/8n3sYz8W/IMG-0006.jpg" alt="Hardik Shah - Gallery Photo 6" class="gallery-image">
+                        <div class="gallery-caption">2017 ITE Annual Meeting in Toronto, Canada</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/jv9WQd92/IMG-0007.jpg" alt="Hardik Shah - Gallery Photo 7" class="gallery-image">
+                        <div class="gallery-caption">2018 ITE Annual Meeting in Minneapolis, MN</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/Z1Rm1nVf/IMG-0008.jpg" alt="Hardik Shah - Gallery Photo 8" class="gallery-image">
+                        <div class="gallery-caption">2018 ITE Annual Meeting in Minneapolis, MN</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/5WPQQqZf/IMG-0009.jpg" alt="Hardik Shah - Gallery Photo 9" class="gallery-image">
+                        <div class="gallery-caption">2018 ITE Annual Meeting in Minneapolis, MN</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/jP3cs6gP/IMG-7203.jpg" alt="Hardik Shah - Gallery Photo 10" class="gallery-image">
+                        <div class="gallery-caption">2018 ITE Annual Meeting in Minneapolis, MN</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/XxncxsS1/IMG-0011.jpg" alt="Hardik Shah - Gallery Photo 11" class="gallery-image">
+                        <div class="gallery-caption">2018 ITE Annual Meeting in Minneapolis, MN</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/DfgjjTrd/IMG-4984.jpg" alt="Hardik Shah - Gallery Photo 12" class="gallery-image">
+                        <div class="gallery-caption">2019 ITE Annual Meeting in Austin, TX</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/KjrsfrJs/IMG-4986.jpg" alt="Hardik Shah - Gallery Photo 13" class="gallery-image">
+                        <div class="gallery-caption">2019 ITE Annual Meeting in Austin, TX</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/PzCJ08Cv/IMG-5011.jpg" alt="Hardik Shah - Gallery Photo 14" class="gallery-image">
+                        <div class="gallery-caption">2019 ITE Annual Meeting in Austin, TX</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/S48pSLW7/IMG-0463.jpg" alt="Hardik Shah - Gallery Photo 15" class="gallery-image">
+                        <div class="gallery-caption">2020 ITE Meeting during TRB</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/WNktqgBx/IMG-2581.jpg" alt="Hardik Shah - Gallery Photo 16" class="gallery-image">
+                        <div class="gallery-caption">2020 ITE Meeting during TRB</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/WWNcCKyb/IMG-4160.jpg" alt="Hardik Shah - Gallery Photo 17" class="gallery-image">
+                        <div class="gallery-caption">2022 ITE Annual Meeting in New Orleans, LA</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/zTgn2rVH/IMG-0018.jpg" alt="Hardik Shah - Gallery Photo 18" class="gallery-image">
+                        <div class="gallery-caption">2022 ITE Annual Meeting in New Orleans, LA</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/SCHhQ4Y/IMG-6782.jpg" alt="Hardik Shah - Gallery Photo 19" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/7NzfDFQ7/IMG-6783.jpg" alt="Hardik Shah - Gallery Photo 20" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/nNPZ3SN0/IMG-6784.jpg" alt="Hardik Shah - Gallery Photo 21" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/8gr2zbCk/IMG-1253.jpg" alt="Hardik Shah - Gallery Photo 22" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/0pD4sgcx/IMG-6836.jpg" alt="Hardik Shah - Gallery Photo 23" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/ymN13VDf/IMG-6886.jpg" alt="Hardik Shah - Gallery Photo 24" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/PGLNG3Gn/IMG-6887.jpg" alt="Hardik Shah - Gallery Photo 25" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/zTmQ9PWR/IMG-6892.jpg" alt="Hardik Shah - Gallery Photo 26" class="gallery-image">
+                        <div class="gallery-caption">2023 ITE Annual Meeting in Portland, OR</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/WNtKQXNc/IMG-8305.jpg" alt="Hardik Shah - Gallery Photo 27" class="gallery-image">
+                        <div class="gallery-caption">2024 ITE Annual Meeting in Philadelphia, PA</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/LDBnDxhc/IMG-8310.jpg" alt="Hardik Shah - Gallery Photo 28" class="gallery-image">
+                        <div class="gallery-caption">2024 ITE Annual Meeting in Philadelphia, PA</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/Vpk3nD34/IMG-9189.jpg" alt="Hardik Shah - Gallery Photo 29" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/PvH8cLfR/IMG-9190.jpg" alt="Hardik Shah - Gallery Photo 30" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/0w52xWY/IMG-9191.jpg" alt="Hardik Shah - Gallery Photo 31" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/Fb3bsJQM/IMG-9192.jpg" alt="Hardik Shah - Gallery Photo 32" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/spPPkLFH/IMG-9196.jpg" alt="Hardik Shah - Gallery Photo 33" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/LzzCxbgt/IMG-9200.jpg" alt="Hardik Shah - Gallery Photo 34" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/5gbSv24T/IMG-9203.jpg" alt="Hardik Shah - Gallery Photo 35" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/bRXhZVM4/IMG-9206.jpg" alt="Hardik Shah - Gallery Photo 36" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/q3Y8jgp6/IMG-9214.jpg" alt="Hardik Shah - Gallery Photo 37" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/0VKjdGKW/IMG-9220.jpg" alt="Hardik Shah - Gallery Photo 38" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/MxqL2Cxt/IMG-9266.jpg" alt="Hardik Shah - Gallery Photo 39" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/My6x9z0w/IMG-9267.jpg" alt="Hardik Shah - Gallery Photo 40" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/nqXcwNBg/IMG-9284.jpg" alt="Hardik Shah - Gallery Photo 41" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/WpNhxGCR/IMG-9296.jpg" alt="Hardik Shah - Gallery Photo 42" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/szbm1PP/IMG-9299.jpg" alt="Hardik Shah - Gallery Photo 43" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/Tq7Nn0q8/IMG-9304.jpg" alt="Hardik Shah - Gallery Photo 44" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/fdmFhHYK/IMG-9313.jpg" alt="Hardik Shah - Gallery Photo 45" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/7tZ0Jpmg/IMG-9348.jpg" alt="Hardik Shah - Gallery Photo 46" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/mCrPsBjS/IMG-9371.jpg" alt="Hardik Shah - Gallery Photo 47" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/DPK3pPDV/IMG-9527.jpg" alt="Hardik Shah - Gallery Photo 48" class="gallery-image">
+                        <div class="gallery-caption">2025 Joint ITE and FLPR District Annual Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/pjYvY6L6/IMG-9528.jpg" alt="Hardik Shah - Gallery Photo 49" class="gallery-image">
+                        <div class="gallery-caption">2025 ITE Annual Meeting in Orlando, Florida</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/nqkYfhQH/IMG-2162.jpg" alt="Hardik Shah - Gallery Photo 50" class="gallery-image">
+                        <div class="gallery-caption">2025 Texas District Fall Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/RGDdB8yy/IMG-2313.jpg" alt="Hardik Shah - Gallery Photo 51" class="gallery-image">
+                        <div class="gallery-caption">2025 Texas District Fall Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/zTPpn5MJ/IMG-2232.jpg" alt="Hardik Shah - Gallery Photo 52" class="gallery-image">
+                        <div class="gallery-caption">2025 Texas District Fall Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/67pZHYXV/3026207221498201301.jpg" alt="Hardik Shah - Gallery Photo 53" class="gallery-image">
+                        <div class="gallery-caption">2025 Texas District Fall Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/0jJ0FBn3/IMG-0054.jpg" alt="Hardik Shah - Gallery Photo 54" class="gallery-image">
+                        <div class="gallery-caption">2025 ITE FL Puerto Rico Section Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/3y11GHq8/IMG-6398.jpg" alt="Hardik Shah - Gallery Photo 55" class="gallery-image">
+                        <div class="gallery-caption">2025 ITE FL Puerto Rico Section Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/Cp69Nb21/IMG-6471.jpg" alt="Hardik Shah - Gallery Photo 56" class="gallery-image">
+                        <div class="gallery-caption">2025 ITE FL Puerto Rico Section Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://i.ibb.co/3YBPBNH5/IMG-6476.jpg" alt="Hardik Shah - Gallery Photo 57" class="gallery-image">
+                        <div class="gallery-caption">2025 ITE FL Puerto Rico Section Meeting</div>
+                        <div class="gallery-controls">
+                            <button class="gallery-arrow" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
+                            <div class="gallery-dots" id="dotsContainer"></div>
+                            <button class="gallery-arrow" onclick="changeSlide(1)" aria-label="Next photo">›</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- CALL TO ACTION -->
+    <div style="max-width: 1000px; margin: -100px auto 0; padding: 0 20px; position: relative; z-index: 1;">
+        <div class="quote-box" style="text-align: left; font-style: normal; font-size: 1.2rem;">
+            ITE's strength lies in its members, its expertise, and its ability to lead change.
+            My vision focuses on advancing innovation, expanding engagement, and reinforcing
+            ITE's role as a guiding voice in the transportation industry. Together, we can bring
+            this vision to life.
+       </div>
+    </div>
+    
+    <!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Connect With Me</h2>
+    <div class="buttons-grid">
+        <!-- Email Button -->
+        <a href="mailto:hshah@structurepoint.com" class="contact-button" title="Send Email">
+            <svg viewBox="0 0 24 24" class="email-icon">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 7l10 7 10-7"/>
+            </svg>
+        </a>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/hardik-shah-p-e-ptoe-msce-27a12417" target="_blank" class="contact-button" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" class="linkedin-icon">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/shahhardik/" target="_blank" class="contact-button" title="Facebook Profile">
+            <svg viewBox="0 0 24 24" class="facebook-icon">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+
+        <!-- Phone Button -->
+        <a href="tel:+17654269370" class="contact-button" title="Call Me">
+            <svg viewBox="0 0 24 24" class="phone-icon">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </a>
+
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-hashtag">#HARDIK4ITE</div>
+    </footer>
+
+    <script>
+    // Photo Gallery with Auto-Slide and Manual Controls
+    let slideIndex = 0;
+    let slideTimer;
+    const SLIDE_INTERVAL = 5000;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("gallery-slide");
+        const dots = document.querySelectorAll(".dot");
+        
+        if (slides.length === 0) return;
+        
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        
+        dots.forEach(dot => {
+            dot.classList.remove("active");
+        });
+        
+        slides[slideIndex].classList.add("active");
+        
+        const dotsContainers = document.querySelectorAll("#dotsContainer");
+        dotsContainers.forEach(container => {
+            const dotsInContainer = container.querySelectorAll(".dot");
+            if (dotsInContainer[slideIndex]) {
+                dotsInContainer[slideIndex].classList.add("active");
+            }
+        });
+    }
+
+    function resetTimer() {
+        clearTimeout(slideTimer);
+        slideTimer = setTimeout(autoAdvance, SLIDE_INTERVAL);
+    }
+
+    function autoAdvance() {
+        const slides = document.getElementsByClassName("gallery-slide");
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlides();
+        resetTimer();
+    }
+
+    function changeSlide(direction) {
+        const slides = document.getElementsByClassName("gallery-slide");
+        slideIndex = (slideIndex + direction + slides.length) % slides.length;
+        showSlides();
+        resetTimer();
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+        resetTimer();
+    }
+
+    function generateDots() {
+        const slides = document.getElementsByClassName("gallery-slide");
+        const dotsContainers = document.querySelectorAll("#dotsContainer");
+        
+        if (dotsContainers.length === 0) return;
+        
+        dotsContainers.forEach(container => {
+            container.innerHTML = '';
+            
+            for (let i = 0; i < slides.length; i++) {
+                const dot = document.createElement('button');
+                dot.className = 'dot';
+                if (i === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', `Go to photo ${i + 1}`);
+                dot.onclick = function() { currentSlide(i); };
+                container.appendChild(dot);
+            }
+        });
+    }
+
+    // Touch/Swipe Support
+    function handleTouchStart(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }
+
+    function handleTouchEnd(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }
+
+    function handleSwipe() {
+        const swipeThreshold = 50; // minimum distance for swipe
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swiped left, go to next slide
+                changeSlide(1);
+            } else {
+                // Swiped right, go to previous slide
+                changeSlide(-1);
+            }
+        }
+    }
+
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = target.offsetTop - navHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Add scroll effect to navbar
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Initialize gallery when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        generateDots();
+        showSlides();
+        resetTimer();
+        
+        // Add touch event listeners to gallery container
+        const galleryContainer = document.querySelector('.gallery-container');
+        if (galleryContainer) {
+            galleryContainer.addEventListener('touchstart', handleTouchStart, false);
+            galleryContainer.addEventListener('touchend', handleTouchEnd, false);
+        }
+    });
+    </script>
+</body>
+</html>
